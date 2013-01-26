@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.jumbohome.server.clientmanager.models.UserType" table="user_types">
+        <id name="userTypeId" type="int" column="user_type_id">
+            <generator class="increment"/>
+        </id>
+
+        <property name="type">
+            <column name="type"/>
+        </property>
+        <property name="description">
+            <column name="description"/>
+        </property>
+
+    </class>
+</hibernate-mapping>
