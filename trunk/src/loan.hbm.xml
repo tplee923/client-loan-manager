@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.jumbohome.server.clientmanager.models.Loan" table="loans">
+        <id name="loanId" type="int" column="loan_id">
+            <generator class="increment"/>
+        </id>
+
+        <property name="loanAmount">
+            <column name="loan_amount"/>
+        </property>
+        <property name="loanProgram">
+            <column name="loan_program"/>
+        </property>
+        <property name="rate">
+            <column name="rate"/>
+        </property>
+        <property name="closingDate">
+            <column name="closing_date"/>
+        </property>
+        <property name="refiInterval">
+            <column name="refi_interval"/>
+        </property>
+        <property name="propertyName">
+            <column name="property_name"/>
+        </property>
+        <property name="status">
+            <column name="status"/>
+        </property>
+        <property name="clientId">
+            <column name="client_id"/>
+        </property>
+        <property name="loanOfficerId">
+            <column name="loan_officer_id"/>
+        </property>
+        <property name="updateTime">
+            <column name="update_time"/>
+        </property>
+        <property name="notes">
+            <column name="notes"/>
+        </property>
+
+    </class>
+</hibernate-mapping>
