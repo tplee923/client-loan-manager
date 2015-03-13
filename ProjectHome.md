@@ -1,0 +1,1 @@
+Provide a web application for loan officers to manage clients and their active mortgages, allow (loan officer to) update the current rate and filter those loans that qualified for refinance, generate periodic work report for loan officer.
